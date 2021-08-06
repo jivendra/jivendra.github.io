@@ -292,6 +292,8 @@ nav .toggle-button{
 /* customer */
 .customer{
     background: url(images/bg/bg_wphosting_support-108b73f.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .customer h2{
     margin-bottom: 25px;
