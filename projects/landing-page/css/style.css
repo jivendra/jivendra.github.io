@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --primary-color: #047ade;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+h1,h2{
+    margin: 10px 0 10px;;
+    line-height: normal;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+
+/*----------Navbar---------------*/
+.navbar{
+    background: var(--primary-color);
+    color: #fff;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+nav ul{
+    list-style-type: none;
+}
+.navbar nav ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.navbar nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar nav ul a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+/*------------ShowCase---------------*/
+
+.showcase{
+    background-color: var(--primary-color);
+    color: white;
+    min-height: 400px;
+    position: relative;
+    overflow: visible;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 20px 0;
+}
+.showcase .grid{
+    grid-template-columns: 55fr 45fr;
+    gap: 30px;
+}
+.showcase-text{
+    max-width: 400px;
+}
+.showcase .card{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    justify-self: end;
+}
+.form-control{
+    margin: 20px 0;
+}
+.form-control input[type='text'],.form-control input[type='email']{
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #888;
+    padding: 10px 0;
+}
+.form-control input:focus{
+    outline: none;
+}
+/* --------------------stats---------------- */
+.stats{
+    margin-top: 100px;
+}
+.stats .grid{
+    align-items: center;
+}
+.stats-heading{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+
+}
+.stats .grid h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.stats .grid p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+/* cli */
+.cli .grid{
+    grid-template-columns: 2fr 1fr;
+    font-style: normal;
+    padding-bottom: 30px
+}
+.cli .grid img{
+    grid-row: 1/3;
+}
+/* cloud */
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+.cloud{
+    padding-bottom: 20px;
+}
+/* Languages */
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card{
+    margin: 20px 7px;
+    transition: 0.2s;   
+}
+.languages .card h4{
+    font-size: 20px;
+}
+.languages .card:hover{
+    transform: translateY(-15px);
+}
+/* footer */
+footer a{
+    color: #fff
+}
+footer .social a{
+    margin: 0 10px;
+}
+@media only screen and (max-width: 925px)
+{
+    .showcase .grid{
+        grid-template-columns: 100%;
+        min-height: 400px;
+        gap: 10px;
+    }
+    .showcase-text{
+        text-align: center;
+        margin:  40px auto 0;
+        width: auto;
+    }
+    .showcase-form{
+        justify-self: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .stats .grid{
+        grid-template-columns: 1fr;
+    }
+    .cloud .grid{
+        grid-template-columns: 1fr;
+    }
+    .cloud img{
+        max-width: 400px;
+        margin: auto;
+    }
+    .cli .grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 500px){
+    .navbar .flex{
+        flex-flow: column;
+    }
+    .showcase-text{
+        width: auto;
+    }
+    .showcase-card{
+        max-width: 400px;
+    }
+    footer .grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

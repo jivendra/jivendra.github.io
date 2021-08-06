@@ -1,0 +1,140 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* margin */
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3em 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 3em;
+}
+.m-5{
+    margin: 4rem;
+}
+/* padding */
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3em 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-4{
+    padding: 3em;
+}
+.p-5{
+    padding: 4rem;
+}
+.btn{
+    border: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.btn-outline{
+    border: 1px solid #fff;
+    background: transparent;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+/* Backgrounds & color buttons */
+.bg-primary, .btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary, .btn-secondary{
+    background: var(--secondary-color);
+    color: #fff;
+}
+.bg-dark, .btn-dark{
+    background: var(--dark-color);
+    color: #fff;
+}
+.bg-light, .btn-light{
+    background: var(--light-color);
+    color: #333;
+}
+/* Text and sizes */
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+.xl{
+    font-size: 4rem;
+}

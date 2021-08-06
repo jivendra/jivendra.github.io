@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h2 class="logo">Jivendra</h2>
+                <a href="#" class="toggle-button">
+                    <i class="fas fa-bars fa-2x"></i>
+                </a>
+                <ul class="navbar-links">
+                    <li><a href="#">Hosting</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li class="mobile-login-button"><a href="#"><i class="fas fa-user-circle"></i>Login</a></li>
+                </ul>
+                <ul class="login-button">
+                    <li><a href="#"><i class="fas fa-user-circle"></i>Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    
+            toggleButton.addEventListener('click', () => {
+                navbarLinks.classList.toggle('active')
+            })
+        </script>
+    </header>
+    <section class="hero">
+        <div class="container text-center">
+            <div class="intro">
+                <h1>Web Hosting platform</h1>
+                <h2 class="title-medium all-caps">Crafted for Easy Website Management</h2>
+                <h3 class="title-small third-title">Trusted by the owners of 2,000,000 domains</h3>
+            </div>
+            <div class="hero-cards flex">
+                <div class="card round">
+                    <i class="fas fa-warehouse fa-3x"></i>
+                    <span class="all-caps">Reliable</span>
+                    <h3>Web<br>Hosting</h3>
+                    <p>Get fast and secure hosting for small & medium sites.</p>
+                    <a href="#" class="all-caps round">Get started</a>
+                </div>
+                <div class="card round">
+                    <i class="fab fa-wordpress fa-3x"></i>
+                    <span class="all-caps">Managed</span>
+                    <h3>Wordpress<br>Hosting</h3>
+                    <p>Manage your WordPress sites easily and with more freedom.</p>
+                    <a href="#" class="all-caps round">Get started</a>
+                </div>
+                <div class="card round">
+                    <i class="fas fa-shopping-cart fa-3x"></i>
+                    <span class="all-caps">high performance</span>
+                    <h3>WooCommerce<br>Hosting</h3>
+                    <p>Boost your business with optimized Woo hosting.</p>
+                    <a href="#" class="all-caps round">Get started</a>
+                </div>
+                <div class="card round">
+                    <i class="fas fa-layer-group fa-3x"></i>
+                    <span class="all-caps">autoscalable</span>
+                    <h3>Cloud<br>Hosting</h3>
+                    <p>Choose managed cloud for high-performing sites.</p>
+                    <a href="#" class="all-caps round">Get started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tools-service">
+        <div class="container">
+            <div class="line"></div>
+            <h2 class="text-center title-large">Tools and Services for Seamless Site Building</h2>
+            <p class="text-center large-p">Website building and management made easy</p>
+            <div class="cards flex">
+                <div class="card a flex">
+                    <p class="large-p">EASY & FAST</p>
+                    <h2>Website building</h2>
+                    <p class="small-p">Need a website but don’t know where to start? We give you a full solution including your choice of sitebuilder, premium features, and the support you need to launch your site.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="card b flex">
+                    <p class="large-p">SMOOTH</p>
+                    <h2>Website Transfer</h2>
+                    <p class="small-p">Get free automated WordPress migration with an easy to use WordPress plugin or a professional website transfer done by our experts.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="card c flex">
+                    <p class="large-p">SUITABLE FOR ALL USERS</p>
+                    <h2>Managed WordPress</h2>
+                    <p class="small-p">Need a website but don’t know where to start? We give you a full solution including your choice of sitebuilder, premium features, and the support you need to launch your site.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="card d flex">
+                    <p class="large-p">EASY & FAST</p>
+                    <h2>Website building</h2>
+                    <p class="small-p">Need a website but don’t know where to start? We give you a full solution including your choice of sitebuilder, premium features, and the support you need to launch your site.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent">
+        <div class="container">
+            <div class="grid">
+                <div class="big">
+                    <div class="graphic">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 234.678"><path d="M47.189,223.013a1.052,1.052,0,0,1-1.053-1.053V170.036a1.053,1.053,0,0,1,2.106,0V221.96A1.053,1.053,0,0,1,47.189,223.013Z" fill="#231f20"></path><path d="M88.377,218.875a1.054,1.054,0,0,1-1.053-1.053V189.6a1.054,1.054,0,0,1,2.107,0v28.222A1.054,1.054,0,0,1,88.377,218.875Z" fill="#231f20"></path><path d="M129.979,221.884a1.052,1.052,0,0,1-1.053-1.053V206.912a1.053,1.053,0,0,1,2.106,0v13.922A1.053,1.053,0,0,1,129.979,221.884Z" fill="#231f20"></path><path d="M171.578,220a1.052,1.052,0,0,1-1.053-1.053V187.344a1.053,1.053,0,0,1,2.106,0V218.95A1.053,1.053,0,0,1,171.578,220Z" fill="#231f20"></path><path d="M192.787,206.823a1.054,1.054,0,0,1-1.053-1.053V186.194a1.053,1.053,0,1,1,2.106,0V205.77a1.053,1.053,0,0,1-1.053,1.053Z" fill="#231f20"></path><path d="M212.361,216.241a1.053,1.053,0,0,1-1.053-1.053V167.025a1.053,1.053,0,1,1,2.106,0v48.163A1.054,1.054,0,0,1,212.361,216.241Z" fill="#231f20"></path><path d="M68.4,210.9a1.052,1.052,0,0,1-1.053-1.053V187.825a1.053,1.053,0,0,1,2.106,0v22.023A1.053,1.053,0,0,1,68.4,210.9Z" fill="#231f20"></path><path d="M151.186,234.678a1.053,1.053,0,0,1-1.053-1.053V213.307a1.053,1.053,0,0,1,2.106,0v20.318A1.053,1.053,0,0,1,151.186,234.678Z" fill="#231f20"></path><polygon points="129.843 198.429 229.354 147.111 229.354 126.65 130.251 176.814 129.843 198.429" fill="#e4b229"></polygon><polygon points="31.147 127.058 130.251 176.814 229.354 126.65 204.109 115.325 129.896 155.192 54.964 115.556 31.147 127.058" fill="#f37b42"></polygon><polygon points="129.843 131.544 228.08 81.149 129.991 40.32 30.407 81.149 129.843 131.544" fill="#95c952"></polygon><polygon points="228.08 81.149 228.08 102.448 129.896 155.192 129.843 131.544 228.08 81.149" fill="#256e7a"></polygon><polygon points="30.407 81.149 129.843 131.544 129.896 155.192 30.407 102.567 30.407 81.149" fill="#b1e0e9"></polygon><polygon points="31.147 127.058 31.147 147.111 129.843 198.429 130.251 176.814 31.147 127.058" fill="#eee09f"></polygon><path d="M129.9,156.245a1.053,1.053,0,0,1-1.053-1.051l-.053-23.648a1.054,1.054,0,0,1,1.053-1.053h0a1.053,1.053,0,0,1,1.053,1.053l.053,23.648a1.053,1.053,0,0,1-1.053,1.054Z" fill="#231f20"></path><path d="M129.9,156.245a1.051,1.051,0,0,1-.492-.122L29.915,103.5a1.054,1.054,0,0,1-.561-.931V81.116a1.046,1.046,0,0,1,.249-.647h0a1.013,1.013,0,0,1,.161-.153h0a1.006,1.006,0,0,1,.26-.145l99.564-40.825a1.056,1.056,0,0,1,.8,0l98.082,40.828.06.027a1.049,1.049,0,0,1,.5.5h0a1.014,1.014,0,0,1,.047.119v0a1.029,1.029,0,0,1,.053.348v21.28a1.053,1.053,0,0,1-.555.928L130.394,156.12A1.054,1.054,0,0,1,129.9,156.245ZM31.46,101.933,129.892,154l97.135-52.179V82.873l-96.7,49.608a1.055,1.055,0,0,1-.957,0L31.46,82.863Zm1.475-20.682,96.9,49.11,95.741-49.112L129.988,41.46Z" fill="#231f20"></path><path d="M101.929,17.115a8.558,8.558,0,1,1,8.558-8.557h0A8.567,8.567,0,0,1,101.929,17.115Zm0-15.019a6.462,6.462,0,1,0,6.462,6.462A6.462,6.462,0,0,0,101.929,2.1Z" fill="#efe0a0"></path><path d="M9.709,61.747a1.046,1.046,0,0,1-1.039-.922l-.964-8.008L.562,49.07a1.047,1.047,0,0,1,.046-1.879l7.319-3.386,1.355-7.951a1.048,1.048,0,0,1,1.8-.537l5.487,5.912,7.982-1.167A1.047,1.047,0,0,1,25.618,41.6l-3.924,7.045,3.577,7.231a1.048,1.048,0,0,1-1.142,1.492l-7.916-1.56-5.771,5.637A1.046,1.046,0,0,1,9.709,61.747ZM3.421,48.2l5.751,3.016a1.048,1.048,0,0,1,.554.8l.775,6.447,4.646-4.538a1.047,1.047,0,0,1,.935-.277l6.37,1.257-2.879-5.821a1.048,1.048,0,0,1,.024-.975L22.76,42.44l-6.427.944a1.042,1.042,0,0,1-.92-.324L11,38.3,9.9,44.7a1.048,1.048,0,0,1-.592.775Z" fill="#b1e1ea"></path><path d="M213.024,40.359a1.051,1.051,0,0,1-.6-.187l-5.3-3.691-6.046,2.276a1.048,1.048,0,0,1-1.372-1.285l1.872-6.183-4.033-5.048a1.048,1.048,0,0,1,.8-1.7l6.458-.13,3.554-5.4a1.048,1.048,0,0,1,1.865.233l2.12,6.1,6.229,1.714a1.048,1.048,0,0,1,.356,1.845l-5.149,3.9.3,6.453a1.049,1.049,0,0,1-1,1.095h-.048Zm-5.756-6.1a1.045,1.045,0,0,1,.6.188l4.012,2.792-.224-4.882a1.049,1.049,0,0,1,.414-.884l3.9-2.953-4.716-1.295a1.045,1.045,0,0,1-.712-.668l-1.6-4.616-2.688,4.082a1.048,1.048,0,0,1-.854.472l-4.888.1,3.052,3.819a1.046,1.046,0,0,1,.185.958l-1.413,4.681,4.574-1.722a1.06,1.06,0,0,1,.369-.07Z" fill="#efe0a0"></path><path d="M241.442,66.407A8.558,8.558,0,1,1,250,57.85h0A8.565,8.565,0,0,1,241.442,66.407Zm0-15.018a6.462,6.462,0,1,0,6.462,6.462A6.462,6.462,0,0,0,241.442,51.389Z" fill="#efe0a0"></path><polygon points="154.979 3.695 150.572 9.645 146.166 15.596 143.216 8.804 140.267 2.012 147.623 2.854 154.979 3.695" fill="#b1e1ea"></polygon><path d="M65.371,48.88a1.048,1.048,0,0,1-.885-.487L55.676,34.5a1.047,1.047,0,0,1,.838-1.608l16.434-.686a1.047,1.047,0,0,1,.971,1.533L66.3,48.317a1.046,1.046,0,0,1-.885.562ZM58.418,34.914l6.865,10.823,5.941-11.356Z" fill="#efe0a0"></path></svg>
+                    </div>
+                    <h2>Our platform is powered by Google Cloud</h2>
+                    <p class="small-p">We operate on Google Cloud to create a powerful and technically superior hosting service.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="features">
+                    <div class="icon"><i class="fas fa-server fa-5x"></i></div>
+                    <div>
+                        <h3>SSD persistent storage</h3>
+                        <p>Distributed storage running on SSD disks for an optimal speed and a high-level of redundancy.</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="icon"><i class="fas fa-project-diagram fa-5x"></i></div>
+                    <div>
+                        <h3>Ultra-fast network</h3>
+                        <p>Google is known for maintaining one of the fastest and best connected networks.</p>
+                    </div>
+                    
+                </div>
+                <div class="features">
+                    <div class="icon"><i class="fas fa-leaf fa-5x"></i></div>
+                    <div>
+                        <h3>100% renewable energy match</h3>
+                        <p>Google matches 100% the energy consumed by their operations with renewable energy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="line"></div>
+            <h2 class="section-heading text-center">Powerful solutions built in-house</h2>
+            <p class="large-p text-center section-sub-heading">We create in-house solutions that make your sites run faster and stay safe</p>
+
+            <div class="flex">
+                <div class="content">
+                    <h3>Technical superiority</h3>
+                    <p class="large-p">Fast adoption of the best technologies and in-house built solutions</p>
+                    <p class="small-p">Developing smart in-house solutions and adopting innovative technology is our passion and our craft. We were pioneers in secure account isolation and among the first to use Linux containers. We heavily customized this new lightweight virtualization method to ensure it matches our security and reliability standards. We introduced a custom Let’s Encrypt SSL integration for our clients as soon as it came out. We developed a proprietary AI software preventing over 5 million brute-force attacks every day. And that’s just the beginning. We never stop innovating to bring you the best service possible.</p>
+                </div>
+                <div class="icon"><img src="images/3d_crane_purple.png" alt="paper creane image"></div>
+            </div>
+            <div class="flex">
+                <div class="icon"><img src="images/3d_laptop_orange.png" alt="paper creane image"></div>
+                <div class="content">
+                    <h3>Fully-managed service</h3>
+                    <p class="large-p">Managed service for more convenience</p>
+                    <p class="small-p">We believe that managed hosting is a way to empower our clients to focus on their core business and take the hosting maintenance off their chores list. We offer automatic WordPress updates that you can leave on auto-pilot or schedule. We run the latest PHP versions, but allow you to switch between versions. We enable static caching for your website, but you can easily switch it off or add more layers, like dynamic cache and memcached so you get the performance you want.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="content">
+                    <h3>Security-first Mindset</h3>
+                    <p class="large-p">Constant security monitoring and prevention is our standard</p>
+                    <p class="small-p">We have a team of dedicated security experts keeping track of daily software vulnerabilities on a server and website level. They actively write security patches and enhancements to prevent possible attacks. In the past year alone, we added 300 custom rules to our Web Application Firewall that stopped multiple identified-yet-unresolved third-party software vulnerabilities.</p>
+                </div>
+                <div class="icon"><img src="images/3d_security_green.png" alt="paper creane image"></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="customer">
+        <div class="container">
+            <div class="line"></div>
+            <h2 class="section-heading text-center">Expert Hosting Support Our Customers Love</h2>
+            <p class="large-p text-center section-sub-heading">Our Customer Care team is among the highest-rated support squads online, fast, multi-skilled and helpful.</p>
+            <div class="info flex">
+                <div class="element flex">
+                    <i class="far fa-clock fa-5x"></i>
+                    <h3>Available 24/7</h3>
+                    <p class="large-p">Round-the-clock help center</p>
+                </div>
+                <div class="element flex">
+                    <i class="fab fa-simplybuilt fa-5x"></i>
+                    <h3>Proficient & Friendly</h3>
+                    <p class="large-p">Always eager to help</p>
+                </div>
+                <div class="element flex">
+                    <i class="fas fa-meteor fa-5x"></i>
+                    <h3>Extremely Fast</h3>
+                    <p class="large-p">Quick pickup & resolution</p>
+                </div>
+                <div class="element flex">
+                    <i class="far fa-star fa-5x"></i>
+                    <h3>Top-Rated</h3>
+                    <p class="large-p">Customer satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wordpress">
+        <div class="backdrop flex">
+            <i class="fab fa-wordpress-simple fa-8x"></i>
+        </div>
+        <div class="container">
+            
+            <h2 class="section-heading text-center all-caps">Officially recommended by WordPress.org</h2>
+            <p class="large-p text-center section-sub-heading">We’re honored to be a hosting provider recommended by WordPress.org - the most popular, community-driven sitebuilding software worldwide.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container flex">
+            <p class="small-p">&copy;2021 | This is just a demo website </p>
+        </div>
+    </footer>
+</body>
+</html>

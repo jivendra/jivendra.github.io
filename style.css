@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section{
+    margin: 50px 0;
+} */
+
+/* hero */
+
+.hero{
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 65px;
+    margin-bottom: 18px;
+}
+.hero p{
+    font-family: 'Roboto Mono', monospace;
+    max-width: 600px;
+    font-size: 20px;
+    /* font-style: italic; */
+    color: rgb(46, 46, 46);
+    margin-bottom: 18px;
+}
+.hero a{
+    padding: 15px 20px;
+    font-size: 18px;
+    /* border: 2px dashed black; */
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%23333' stroke-width='3' stroke-dasharray='7%2c 8%2c 20' stroke-dashoffset='24' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 5px;
+    border-radius: 8px;
+    margin: 10px 5px;
+    transition: 0.5s;
+}
+.hero a:hover{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%23333' stroke-width='3' stroke-dasharray='7%2c 8%2c 20' stroke-dashoffset='19' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 5px;
+    /* transform: scale(1.05); */
+}
+
+/* skills */
+.skills{
+    padding: 50px 0;
+    background: #75e6da;
+}
+
+.skills .container{
+    flex-flow: column;
+}
+.skills .container h1{
+    margin: 20px 0;
+    font-size: 40px;
+}
+.skill-cards{
+    flex-wrap: wrap;
+}
+.skill-cards .card{
+    background: #d4f1f4;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    font-size: 18px;
+    position: relative;
+    transition: 0.2s;
+}
+.skill-cards .card:hover{
+    transform: translateY(-10px);
+}
+
+.social ul li{
+    display: inline-block;
+    margin: 18px 10px;
+}
+
+footer{
+    background-color: rgb(43, 13, 43);
+    color: white;
+    padding: 40px 0;
+}
+footer p{
+    font-weight: 100;
+}
+
+@media screen and (max-width: 500px) {
+    .hero h1{
+        font-size: 55px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .skills .container h1{
+        font-size: 35px;
+    }
+    .skills .container .card{
+        font-size: 15px;
+    }
+    
+}
+
+
+
+

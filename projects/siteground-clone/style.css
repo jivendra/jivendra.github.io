@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-3: #363636;
+    --dark-2: #333230;
+    --dark-1: #666;
+    --dark-text-2: #a4a4a4;
+    --dark-text-1: #ddd;
+    --light: #e6e3e3;
+    --cream: #cdaa72;
+    --orange: #f67a3c;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header */
+nav{
+    background-color: var(--dark-2);
+    color: white;
+    padding: 20px 0 0;
+}
+.logo{
+    color: var(--light);
+}
+nav .container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 12px;
+}
+nav a{
+    color: var(--light);
+    text-decoration: none;
+    padding: 20px 12px;
+}
+nav .navbar-links a:hover{
+    background: var(--light);
+    color: var(--dark-2);
+    border-top: 4px solid var(--cream);
+    transition: 0.3s;
+}
+nav a i{
+    margin: 0 5px;
+}
+nav .mobile-login-button{
+    display: none;
+}
+nav .toggle-button{
+    display: none;
+}
+@media (max-width: 800px){
+    nav .container{
+        grid-template-columns: 1fr auto;
+    }
+    nav .login-button{
+        display: none;
+    }
+    nav .toggle-button{
+        display: inline-block;
+    }
+    nav .mobile-login-button{
+        display: inline-block;
+    }
+    nav .navbar-links li{
+        display: block;
+        text-align: center;
+        
+    }
+    nav .navbar-links{
+        display: none;
+    }
+    nav .navbar-links.active{
+        display: block;
+    }
+}
+/* hero */
+.hero{
+    background-image: url(images/bg/grey-noise.png);
+}
+
+.hero .intro h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 40px 0;
+    color: var(--dark-2);
+}
+.hero .intro h2{
+    color: var(--cream);
+}
+.hero .intro h3{
+    font-style: italic;
+    margin: 40px 0;
+    color: var(--dark-1);
+}
+/* cards */
+.hero-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 5px;
+    max-width: 240px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 3px lightgrey;
+    background: white;
+}
+.hero-cards .card i, .card span{
+    color: var(--dark-1);
+}
+.hero-cards .card h3, .card p{
+    color: var(--dark-3);
+    margin-bottom: 20px;
+}
+.hero-cards .card p{
+    font-size: 16px;
+    line-height: 1.6;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    
+}
+.hero-cards .card a{
+    justify-self: flex-end;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: var(--orange);
+    color: white;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-cards .card > *{
+    display: block;
+    margin: 5px 0;
+}
+.hero-cards .card h3{
+    font-size: 22px;
+}
+/* tools and services */
+.tools-service .container >h2{
+    color: var(--dark-3);
+}
+
+.tools-service .a{
+    background: url(images/bg/greenbg.jpg);
+}
+.tools-service .b{
+    background: url(images/bg/darkyellowbg.jpg);
+}
+.tools-service .c{
+    background: url(images/bg/lightbluebg.jpg);
+}
+.tools-service .d{
+    background: url(images/bg/darkbluebg.jpg);
+}
+.tools-service .container > p{
+    color: var(--dark-1);
+    margin: 10px 20px 50px;
+}
+.tools-service h2 {
+    color: white;
+}
+
+.tools-service .cards > .flex{
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    margin: 10px 10px;
+    padding: 40px 40px;
+    max-width: 500px;
+    min-height: 400px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 3px;
+}
+.tools-service .card .large-p{
+    color: white;
+}
+.tools-service .card .small-p{
+    margin: 40px 0 80px;
+    color: white;
+}
+.tools-service .card a{
+    justify-self: flex-end;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 40px;
+    transition: 0.2s;
+}
+.tools-service .card a:hover{
+    color: #ddd;
+    transition: ease;
+}
+/* recently launched */
+.recent{
+    background: url(images/bg/noise-highlight.png);
+}
+.recent .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 30px;
+}
+@media screen and (max-width: 768px){
+    .recent .grid{
+        grid-template-columns: 1fr;
+    }
+    .recent .big{
+        max-width: 600px;
+    }
+   
+}
+.recent .big{
+    grid-row: 1/4;
+}
+.recent .big .graphic{
+    width: 300px;
+}
+.recent .big h2{
+    margin-bottom: 20px;
+}
+.recent .icon{
+    color: var(--dark-1);
+    justify-self: center;
+}
+.recent .features{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 15px;
+    align-content: center;
+
+}
+.recent .features h3{
+    margin-bottom: 10px;
+}
+.recent .button{
+    justify-self: flex-end;
+    color: var(--dark-3);
+    margin: 50px 0 20px;
+    text-decoration: none;
+    border: 1px solid var(--dark-1);
+    border-radius: 3px;
+    padding: 10px 40px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+/* advantages */
+.advantages .flex{
+    justify-content: space-between;
+    margin: 20px;
+}
+.advantages .content .small-p{
+    margin: 40px 0 20px;
+    line-height: 1.6;
+    color: var(--dark-3);
+}
+.advantages .flex .content{
+    width: 60%;
+    max-width: 700px;
+}
+.advantages .flex .icon{
+    margin: 0 30px;
+    width: 250px;
+}
+@media screen and (max-width: 1000px){
+    .advantages .flex{
+        flex-direction: column;
+    }
+    .advantages .flex .content{
+        align-self: stretch;
+        width: 100%;
+        max-width: 100%;
+    }
+    .advantages .flex .icon{
+        margin-bottom: 30px;
+        order: 1;
+    }
+}
+
+/* customer */
+.customer{
+    background: url(images/bg/bg_wphosting_support-108b73f.jpg);
+}
+.customer h2{
+    margin-bottom: 25px;
+}
+.customer h2, .customer p, .customer h3{
+    color: white;
+}
+.customer .info{
+    justify-content: space-evenly;
+
+}
+.customer .element{
+    flex-direction: column;
+    width: 250px;
+    margin: 0 20px;
+}
+.customer .element > *{
+    margin: 5px 0;
+}
+.customer .element i{
+    color: var(--cream);
+    margin: 40px 0 30px;
+}
+/* wordpress */
+.wordpress{
+    background: url(images/bg/lightbluebg.jpg);
+}
+.wordpress .backdrop{
+    margin: auto;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.wordpress .container > *{
+    color: white;
+}
+
+
+
